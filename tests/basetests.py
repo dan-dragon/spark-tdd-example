@@ -4,10 +4,10 @@ import logging
 import unittest
 
 try:
-    # Append PySpark to PYTHONPATH / Spark 2.1.0
+    # Append PySpark to PYTHONPATH / Spark 3.2.1
     sys.path.append(os.path.join(os.environ["SPARK_HOME"], "python"))
     sys.path.append(os.path.join(os.environ["SPARK_HOME"], "python", "lib",
-                                 "py4j-0.10.4-src.zip"))
+                                 "py4j-0.10.9.3-src.zip"))
 except KeyError as e:
     print("SPARK_HOME is not set", e)
     sys.exit(1)
